@@ -1,0 +1,22 @@
+apply plugin: 'application'
+
+mainClassName = 'Challenge'
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+//    compile 'io.dropwizard:dropwizard-core:1.1.0'
+    compile 'org.apache.commons:commons-lang3:3.0'
+    compile 'io.dropwizard:dropwizard-jdbi:1.1.0'
+    compile 'mysql:mysql-connector-java:6.0.6'
+    compile 'io.netty:netty-all:4.0.34.Final'
+    compile 'org.mindrot:jbcrypt:0.4'
+    compile 'commons-dbcp:commons-dbcp:1.4'
+    testCompile group: 'junit', name: 'junit', version: '4.+'
+}
+
+run {
+    args "server", "app.yaml"
+}

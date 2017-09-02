@@ -1,0 +1,10 @@
+dbDriverClassName : com.mysql.jdbc.Driver
+dbUrl : jdbc:mysql://localhost:3306/challenge
+dbUserName : root
+dbPassword : testpass
+serverPort : 8000
+poolSize : 10
+maxHttpContentLength : 104857600
+ioThreads : 4
+workerThreads : 300
+tcpNoDelay : true
